@@ -2,9 +2,9 @@
 
 ## Fontes locais permanentes
 
-- Gerador: `C:\Users\Viviane\OneDrive\Trabalho\Monitoramento\Propostas\gerador-de-propostas.html`.
-- Modelo de pasta: `C:\Users\Viviane\OneDrive\Trabalho\Monitoramento\Contratos\- Pasta Modelo`.
-- Destino: pasta do cliente em `C:\Users\Viviane\OneDrive\Trabalho\Monitoramento\Contratos`, com subpastas Contrato, Relatórios e Vistorias.
+- Gerador: `C:\Users\Viviane\OneDrive\Trabalho\ED\03_Comercial\Gera-Proposta\gerador-de-propostas.html` (versionado em github.com/Mattsds/ED-docs).
+- Registro de propostas: planilha Google `1H5YaWeIYNtEJsJDyovwSB-H4wVCl2WXDdeutX9DIHqo`, aba `Propostas` (colunas: Registrado em, Proposta, Cliente, CPF/CNPJ, Telefone, E-mail, CEP cobrança, Zona, Usinas, Painéis, Detalhe das usinas, Plano escolhido, Essencial, Completo, Implantação, Desconto, Ajuste, Tabela, Arquivo de origem, Observação). Busque a proposta aqui pelo número ou cliente antes de perguntar valores.
+- Pastas de cliente: `C:\Users\Viviane\OneDrive\Trabalho\ED\04_Projetos\Em-andamento\NNN - Nome` (próximo número livre; subpastas existentes: Contas, Monitoramento, Auditoria). Contrato vai em subpasta `Contrato`, criada se não existir. Não sobrescreva arquivos.
 
 Leia a versão atual do gerador a cada venda. Preserve o arquivo original. Copie a estrutura do modelo somente se o destino não existir; não sobrescreva contratos existentes. Salve PDF e HTML preenchido em Contrato. Caminhos são configuração deste computador; no Hermes/WSL confirme o mapeamento local.
 
