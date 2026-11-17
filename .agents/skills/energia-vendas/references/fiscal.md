@@ -8,6 +8,10 @@ Nove assinaturas consultadas tinham serviço municipal ID `290628`, nome `31.01 
 
 Reutilize somente uma configuração validada para o serviço e cliente. Não copie campos monetários calculados (`stateIbsValue`, `cbsValue` etc.) de outra venda. Não confunda alíquota normal com retenção. Sem retenção não significa tributos zerados. Preserve configurações tributárias completas e consulte o contrato dos campos enviados: nem todo campo retornado em GET é aceito em POST/PUT.
 
+## Regra fixa: condomínio
+
+Cliente condomínio (razão social ou natureza jurídica de condomínio) sempre tem retenção total: ISS, PIS, COFINS e CSLL retidos, na cobrança recorrente e na pontual. Não pergunte se há retenção; informe que será aplicada. Alíquotas: use as da configuração validada da conta; se não houver, pergunte ao usuário.
+
 ## Recorrente
 
 Consulte `GET /v3/subscriptions/{id}/invoiceSettings` para obter referência. Configure via `POST /v3/subscriptions/{id}/invoiceSettings` com `effectiveDatePeriod: BEFORE_PAYMENT_DUE_DATE`, `daysBeforeDueDate: 10`, serviço e tributos validados. Assinaturas antigas tinham 15 dias; não as altere ao criar uma nova. Respostas observadas usam também o nome `invoiceCreationPeriod`; não copie esse nome para uma requisição sem conferir a documentação.
