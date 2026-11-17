@@ -23,6 +23,8 @@ Reúna as perguntas faltantes em um bloco, adaptado ao serviço:
 
 - Cliente novo: nome/razão social e CPF/CNPJ para o fluxo com Asaas. Contato e endereço fiscal conforme exigidos para nota e notificações.
 - Contrato PJ: representante com nome, CPF, cargo e e-mail de assinatura; contato e telefone com DDD; e-mail financeiro. Diferencie e-mail financeiro de login na plataforma. Reutilize dados existentes informando sua origem; pergunte divergências.
+- PF: nome, CPF, e-mail, telefone e endereço completo com CEP (não há CNPJ para buscar endereço).
+- Usinas: pergunte quantas. Para cada uma: código SolarView, AC (kW), DC (kWp), número da UC onde está ligada e endereço dessa UC. Não suponha que o endereço da UC é o endereço fiscal.
 - Venda: serviço, descrição e valor. Identifique se é pontual ou recorrente; monitoramento requer plano quando relevante.
 - Pontual: vencimento. Não há prazo padrão aprovado.
 - Recorrente: mensal e por prazo indeterminado. Não pergunte duração da assinatura. Vigência do contrato no CRM é um dado separado; não invente 12 meses.
