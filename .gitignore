@@ -1,0 +1,17 @@
+# Segredos nunca entram aqui
+.env
+.env.*
+*.key
+*.pem
+
+# Temporarios de Office e de sistema
+~$*
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos de cliente nao entram: so caminho e resumo (ver AGENTS.md)
+*.pdf
+*.docx
+*.xlsx
+*.xlsm
