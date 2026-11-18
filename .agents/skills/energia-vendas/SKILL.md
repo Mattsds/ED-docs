@@ -13,6 +13,21 @@ Execute somente as operações solicitadas: cliente, card, cobrança e/ou config
 
 Leia [o mapeamento do CRM](references/crm.md) antes de gravar dados e [as regras fiscais](references/fiscal.md) antes de configurar notas.
 
+## Abertura: cliente novo
+
+Quando o usuário disser que tem um cliente novo ou que fechou negócio, abra logo com um único bloco de perguntas, sem esperar ele mandar dados. Pergunte primeiro se é PF ou PJ (se não disse) e já liste o que falta para contrato, CRM, usina e Asaas. Antes de perguntar, busque na planilha de propostas e no CRM e mostre o que já foi encontrado; pergunte só o resto. Pergunte também o que rodar: só contrato, contrato + CRM ou tudo (com Asaas).
+
+Bloco padrão (adapte ao que já se sabe):
+- Proposta (nº ou cliente) e plano escolhido.
+- PF: nome completo, CPF, e-mail, telefone, endereço completo com CEP (vale para contrato e nota).
+- PJ: razão social, CNPJ, quem assina (nome, cargo, CPF), endereço fiscal completo se diferente do CNPJ.
+- E-mail financeiro (boleto/nota), se diferente do e-mail principal.
+- Cada usina: código SolarView, AC (kW), DC (kWp), número da UC ou endereço.
+- Asaas: descrição do serviço na cobrança, vencimento da implantação, retenção (padrão sem; condomínio sempre retém tudo) e condições fora do padrão.
+- Acessos: login Neoenergia (se houver) e e-mail/senha da Energia Digital (se não vier, criar).
+
+No contrato, abaixo da assinatura da Energia Digital: "Mateus Alves De Sordi · Sócio · CPF 023.756.591-98"; abaixo da do contratante: "Nome · Cargo · CPF" de quem assina, sem a palavra "Representante".
+
 ## Coleta de dados
 
 Para contrato, leia [contratos e ZapSign](references/contratos.md). O fluxo aprovado é gerar contrato e cobrança juntos, sem aguardar assinatura, e manter o card em onboarding. A implantação única fica somente como nota/observação do card, nunca nos campos de valor do CRM; sua cobrança no Asaas continua separada quando aplicável.
