@@ -27,8 +27,9 @@ dispositivo"**. Sem isso o Windows mantém arquivos só na nuvem e a leitura fal
 Este repositório tem skills em `.agents/skills/`. Skill é o procedimento detalhado de
 uma tarefa específica. **Leia a skill correspondente antes de executar**, não depois.
 
-- `energia-vendas` — gerar contrato pelo gerador HTML, preparar assinatura no ZapSign,
-  cadastrar cliente e venda no CRM, criar cobrança e configurar nota no Asaas.
+- `energia-vendas` — formalizar a proposta aprovada (ela é o contrato) pelo gerador HTML,
+  preparar assinatura no ZapSign, cadastrar cliente e venda no CRM, criar cobrança e
+  configurar nota no Asaas.
 
 Quando houver conflito: a skill manda no **procedimento** (quais campos, qual endpoint,
 qual ordem). Este arquivo manda nas **regras de conduta** — qual fonte vale, o que você
